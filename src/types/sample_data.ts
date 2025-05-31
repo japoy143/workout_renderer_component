@@ -32,12 +32,17 @@ export type NestedBlock = {
 
 export type SegmentType =
   | {
-      type: "duration";
+      type: "duration_interval";
       title: string;
       blocks: DurationBlock[];
     }
   | {
-      type: "nested";
+      type: "set";
       title: string;
       blocks: NestedBlock[];
     };
+
+export type IdCollectionType = {
+  atIndex: number;
+  progress_count: number;
+};
