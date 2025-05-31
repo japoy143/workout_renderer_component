@@ -16,5 +16,7 @@ running some builds to help me find some minor issues of the codes this help me 
 #### Organize exports
 Setting an index of exports in a multiple file directory for better exports and to prevent redundant of imports that can lead to readability issues
 
+#### Deployed in Vercel
+url link: https://workout-renderer-component.vercel.app/
 
 
