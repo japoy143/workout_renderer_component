@@ -1,4 +1,3 @@
-import React from "react";
 import StartButton from "./StartButton";
 import SegmentTimeLine from "./SegmentTimeLine";
 import type { SegmentType } from "../types/sample_data";
@@ -23,9 +22,17 @@ export default function ProgramCategory({
   description,
   discipline,
   images,
-  duration,
   segments,
 }: ProgramCategoryProps) {
+  //scroll to the first item
+  const scrollStart = () => {
+    const element = document.getElementById("Warmup");
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
   return (
     <section className=" size-full md:px-44 xl:px-96 py-10 space-y-6 ">
       {/* program image */}
@@ -43,7 +50,7 @@ export default function ProgramCategory({
             {discipline}
           </div>
 
-          <StartButton buttonName="Start" />
+          <StartButton action={scrollStart} buttonName="Start" />
         </div>
 
         {/* segments timeline */}
@@ -61,7 +68,12 @@ export default function ProgramCategory({
 
       <div className=" px-6">
         {segments.map((item, index) => (
-          <SegmentContainer segment={item} key={index} image={images[index]} />
+          <SegmentContainer
+            segment={item}
+            key={index}
+            image={images[index]}
+            atIndex={index}
+          />
         ))}
       </div>
     </section>
