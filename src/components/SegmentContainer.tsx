@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import type {
   DurationBlock,
   NestedBlock,
@@ -10,13 +9,11 @@ import Progressbar from "./Progressbar";
 type SegmentContainerType = {
   segment: SegmentType;
   image: string;
-  atIndex: number;
 };
 
 export default function SegmentContainer({
   segment,
   image,
-  atIndex,
 }: SegmentContainerType) {
   // check if nested block
   function isSetBlock(
@@ -56,7 +53,7 @@ export default function SegmentContainer({
 
       {/* segment list */}
       {segment.blocks.map((block, index) => {
-        // segment set
+        //  segment set
         if (isSetBlock(block)) {
           return (
             <div key={index}>
@@ -64,12 +61,13 @@ export default function SegmentContainer({
                 <p>Reps:{block.reps}</p>
                 <p>Render:{block.render}</p>
               </div>
-
+              //nested array mapping
               {block.blocks.map((setData, setIndex) => (
                 <div
                   key={setIndex}
                   className=" mt-2 text-white bg-black/90 md:p-4 lg:p-6  min-h-[120px] rounded-md"
                 >
+                  //heading content
                   <div className=" flex  items-center justify-between">
                     <small className=" text-white/80 hover:text-white  cursor-pointer">
                       {setData.intensity}
@@ -79,12 +77,10 @@ export default function SegmentContainer({
                       {setData.duration.unit}
                     </p>
                   </div>
-
                   <div>
                     <h2 className=" text-xl">{setData.render}</h2>
                     <p className=" text-white/50">{setData.note}</p>
                   </div>
-
                   <div className=" flex justify-end  py-4 ">
                     <button
                       className=" cursor-pointer bg-white text-black py-2 px-4 rounded-md"
@@ -109,6 +105,7 @@ export default function SegmentContainer({
               key={index}
               className=" space-y-2 text-white bg-black/90 md:p-4 lg:p-6  min-h-[120px] rounded-md"
             >
+              //heading content
               <div className=" flex  items-center justify-between">
                 <small className=" text-white/80 hover:text-white  cursor-pointer">
                   {block.intensity}
@@ -118,12 +115,10 @@ export default function SegmentContainer({
                   {block.duration.unit}
                 </p>
               </div>
-
               <div>
                 <h2 className=" text-xl">{block.render}</h2>
                 <p className=" text-white/50">{block.note}</p>
               </div>
-
               <div className=" flex justify-end  py-4 ">
                 <button
                   className=" cursor-pointer bg-white text-black py-2 px-4 rounded-md"

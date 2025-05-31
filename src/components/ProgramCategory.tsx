@@ -66,14 +66,10 @@ export default function ProgramCategory({
         </div>
       </div>
 
+      {/* segment list */}
       <div className=" px-6">
         {segments.map((item, index) => (
-          <SegmentContainer
-            segment={item}
-            key={index}
-            image={images[index]}
-            atIndex={index}
-          />
+          <SegmentContainer segment={item} key={index} image={images[index]} />
         ))}
       </div>
     </section>

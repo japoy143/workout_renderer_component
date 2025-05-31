@@ -1,5 +1,3 @@
-import { useRef } from "react";
-
 type SegmentTimeLineType = {
   title: string;
   icon: string;
