@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# RAINIER I. LESONDATO II
 
-Currently, two official plugins are available:
+Purok 2 Bual sur, Midsayap,Cotabato • 09817914480 • rainierlesondatoii@gmail.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rainierlesondato/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## EDUCATION
+#### Notre Dame of Midsayap College, Midsayap Cotabato
+Bachelor of Science in Information Technology
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## WORK EXPERIENCE
+#### Freelance Software Developer, Midsayap | May 2024-Present
+Developed web applications, improving user engagement and functionality by 30%.
+Built and optimized mobile applications, enhancing performance and user experience by
+25%.
+Designed mockups and UI/UX in Figma, streamlining development workflows and improving
+design consistency by 80%.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+#### Admin Assistant, Midsayap Police Station | Jan 2024-March 2024
+Designed visually appealing graphics, for certifications and programs.
+Accurately encoded and formatted personnel data, ensuring consistency and compliance
+with company standards.
+Captured and edited high-quality images, for pensioner update compliance.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+#### MRT PC & CCTV, Midsayap | Aug 2019-Oct 2019
+Troubleshot complex computer issues, reducing system downtime.
+Assembled and configured custom-built computers, enhancing system performance and user
+satisfaction.
+Installed and optimized operating systems and software, improving overall system efficiency
+
+## PROJECTS
+#### Chat support | Next.js | Tailwindcss | Supabase
+
+A Saas automation chat support web application that has ai integration for optimize and personal response for business message and response to customers.The web application can also be integrated in other applications because it has public api that can be called and will respond a json. 
+
+
+#### CITECODE (Created for a Client) | Flutter | Dart | Hive | Supabase
+
+A Student Attendance Application using qr code to scan and verify students who attended in
+the event. The application works online and offline by caching the data.
+
+#### API Hunt |  React | Typescript | Tailwindcss | Express | Mongo Db
+
+The API Hunt is a web app where you can browse a wide collection of free APIs for your next projects. It offers categorized listings, detailed API descriptions, and direct links to documentation, making it easier for developers to discover and integrate powerful tools quickly.
+
+
