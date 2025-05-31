@@ -61,13 +61,13 @@ export default function SegmentContainer({
                 <p>Reps:{block.reps}</p>
                 <p>Render:{block.render}</p>
               </div>
-              //nested array mapping
+              {/* nested array mapping */}
               {block.blocks.map((setData, setIndex) => (
                 <div
                   key={setIndex}
                   className=" mt-2 text-white bg-black/90 md:p-4 lg:p-6  min-h-[120px] rounded-md"
                 >
-                  //heading content
+                  {/* heading content */}
                   <div className=" flex  items-center justify-between">
                     <small className=" text-white/80 hover:text-white  cursor-pointer">
                       {setData.intensity}
@@ -98,14 +98,14 @@ export default function SegmentContainer({
             </div>
           );
         }
-        // segment duration interval
+        //  segment duration interval
         else {
           return (
             <div
               key={index}
               className=" space-y-2 text-white bg-black/90 md:p-4 lg:p-6  min-h-[120px] rounded-md"
             >
-              //heading content
+              {/* heading content */}
               <div className=" flex  items-center justify-between">
                 <small className=" text-white/80 hover:text-white  cursor-pointer">
                   {block.intensity}
